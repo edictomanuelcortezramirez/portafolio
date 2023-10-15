@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Montserrat Alternates', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+/* font-family: 'Kavoon', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+/* font-family: 'Rock Salt', cursive; */
+body {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+.container-fluid {
+  padding: 0;
+}
+/* ---------------nav--------------- */
+.navbar {
+  padding: 0 150px 0 150px;
+  position: sticky;
+  top: 0;
+}
+.navbar-brand img {
+  width: 3em;
+}
+.nav-link {
+  color: white;
+}
+:hover.nav-link {
+  color: #efd81d;
+}
+.collapse a {
+  align-self: baseline;
+}
+.text-welcome .btn {
+  border-radius: 20px;
+  margin: 40px 30px 0 0;
+}
+#content {
+  background-color: #f8f8f8;
+  position: relative;
+  width: 80px;
+  height: 40px;
+  border-radius: 25px;
+  margin: 0px auto;
+  box-shadow: inset 4px 4px 6px #bcbaba, inset -4px -4px 6px #fff;
+  margin-top: 4px;
+  cursor: pointer;
+}
+#content.active .toggle {
+  left: 40px;
+}
+body.active {
+  background-color: #212529;
+}
+.toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  transform: scale(0.7);
+  background-color: linear-gradient(145deg, #d8d8d8, #ffffff);
+  border-radius: 25px;
+  box-shadow: 3px 3px 8px #c4c4c4, -3px -3px 8px #fff;
+}
+.fa-solid {
+  vertical-align: sub;
+}
+/* ---------------banner--------------- */
+.text-welcome {
+  color: black;
+  margin: 17em 0 12em 0;
+}
+.wel-title {
+  font-size: 4.5em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 60px;
+  margin: 0;
+}
+.wel-subtitle {
+  font-size: 2.5em;
+  font-weight: 500;
+  margin: 0;
+}
+.wel-resume {
+  margin: 40px 0 0 0;
+  font-size: 1.5em;
+}
+/* -------------portfolio------------- */
+.title-port {
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  margin: 1.5em 0 0 0;
+}
+.resume-port {
+  font-size: 1.5em;
+  text-align: center;
+}
+.group-card {
+  margin: 30px 0 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.card {
+  border-radius: 0;
+  border-color: #212529;
+  margin: 12px 0;
+}
+.card img {
+  width: 100%;
+  border-radius: 0;
+  padding: 10px;
+}
+/* -----------------contac----------------- */
+.contact {
+  text-align: center;
+  color: white;
+  position: sticky;
+  bottom: 0;
+  font-size: 22px;
+}
+.footer {
+  border-top: #212529;
+  border-color: #212529;
+  border-width: 2px;
+  font-weight: 700;
+  text-align: end;
+}
+#buttonScroll {
+  display: none;
+  border-radius: 20px;
+  margin: 0 30px 70px 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  background-color: white;
+}
+.nav-footer {
+  color: white;
+  font-size: 1.5em;
+  margin: 0 30px 0 0;
+  padding: 10px 0 10px 0;
+}
+.nav-footer p {
+  margin: 0;
+}
+/* -----------------vocationalgoals----------------- */
+.wel-subtitle-vg {
+  font-size: 2.5em;
+  font-weight: 500;
+  margin: 0;
+}
+.wel-resume-vg {
+  margin: 40px 2em 0 2em;
+  font-size: 1.5em;
+}
+/* ---------responsive--------- */
+@media screen and (max-width: 993px) {
+  .text-welcome {
+    color: black;
+    margin: 9em 1.5em 3em 1.5em;
+  }
+  .wel-title {
+    font-size: 3.2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 60px;
+    margin: 0;
+  }
+  .wel-subtitle {
+    font-size: 2em;
+    font-weight: 500;
+    margin: 0;
+  }
+  .wel-resume {
+    margin: 40px 0 0 0;
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 577px) {
+  .text-welcome {
+    color: black;
+    margin: 4em 1.5em 0 1.5em;
+  }
+  .wel-title {
+    font-size: 3.2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 60px;
+    margin: 0;
+  }
+  .wel-subtitle {
+    font-size: 2em;
+    font-weight: 500;
+    margin: 0;
+  }
+  .wel-resume {
+    margin: 40px 0 0 0;
+    font-size: 1.5em;
+  }
+  .navbar {
+    padding: 0 10px 0 10px;
+    position: sticky;
+    top: 0;
+  }
+  .navbar-brand img {
+    width: 3em;
+  }
+  .navbar-toggler {
+    order: 2;
+  }
+}
